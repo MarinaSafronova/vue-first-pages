@@ -118,7 +118,7 @@ nav{
 .link{
   color: #60E1CB;
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.438rem;
   transition: .5s ease all;
