@@ -1,0 +1,205 @@
+/*Reset Styles*/
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a {
+    color: #F3FFFD;
+    -o-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+    color: #F3FFFD;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+ul li{
+    list-style: none;
+}
+
+
+/*FONTS*/
+@font-face {
+    font-family: "Circular Std";
+    font-weight: 500;
+    font-style: italic;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("CircularStd-MediumItalic"), url("/fonts/CircularStd-MediumItalic.woff2") format("woff2"), url("/fonts/CircularStd-MediumItalic.woff") format("woff");
+}
+@font-face {
+    font-family: "Circular Std";
+    font-weight: 900;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("CircularStd-Black"), url("/fonts/CircularStd-Black.woff2") format("woff2"), url("/fonts/CircularStd-Black.woff") format("woff");
+}
+@font-face {
+    font-family: "Circular Std";
+    font-weight: 500;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("CircularStd-Medium"), url("/fonts/CircularStd-Medium.woff2") format("woff2"), url("/fonts/CircularStd-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: "Circular Std";
+    font-weight: bold;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("CircularStd-Bold"), url("/fonts/CircularStd-Bold.woff2") format("woff2"), url("/fonts/CircularStd-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "Circular Std";
+    font-weight: 900;
+    font-style: italic;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("CircularStd-BlackItalic"), url("/fonts/CircularStd-BlackItalic.woff2") format("woff2"), url("/fonts/CircularStd-BlackItalic.woff") format("woff");
+}
+@font-face {
+    font-family: "Circular Std Book";
+    font-weight: normal;
+    font-style: italic;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("CircularStd-BookItalic"), url("/fonts/CircularStd-BookItalic.woff2") format("woff2"), url("/fonts/CircularStd-BookItalic.woff") format("woff");
+}
+@font-face {
+    font-family: "Circular Std Book";
+    font-weight: normal;
+    font-style: normal;
+    font-display: auto;
+    unicode-range: U+000-5FF;
+    src: local("CircularStd-Book"), url("/fonts/CircularStd-Book.woff2") format("woff2"), url("/fonts/CircularStd-Book.woff") format("woff");
+}
+
+/*Color*/
+:root {
+    --white-color: #ffffff;
+    --main-menu-color: #60E1CB;
+    --main-text-color: #292525;
+    --main-text-black: #000000;
+    --main-text-portfolio: #7BC0E3;
+    --bg-card: #FDFDFF;
+}
+/*Style */
+body{
+    font-family: 'Circular Std Book', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--main-text-color);
+    height: 100%;
+
+}
+
+/*Flex*/
+.d-flex{
+    display: flex;
+}
+/*Style*/
+header{
+    position: relative;
+    min-height: 113px;
+}
+h2.section__title{
+    font: 3rem/3.813rem CircularStd-Bold;
+    font-style: normal;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+h2.section__title span{
+    color: var(--main-menu-color);
+}
+.container{
+    max-width: 93.75em;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+p.page__text{
+    font-size: 1.25rem;
+    line-height: 1.938rem;
+    text-align: justify;
+    color: var(--main-text-black);
+    margin-bottom: 3.125em;
+}
+main{
+    flex: 1;
+}
+
+/*Responsive*/
+@media(max-width: 1440px){
+    .container{
+        max-width: 74.75em;
+        padding: 0 10px;
+    }
+    h2.section__title{
+        font: 2rem/2.813rem CircularStd-Bold;
+        margin-bottom: 1em;
+        font-weight: bold;
+    }
+    p.page__text{
+        font-size: 1rem;
+        line-height: 1.638rem;
+        text-align: justify;
+    }
+}
+@media(max-width: 1024px){
+    header{
+        position: relative;
+        min-height: 75px;
+    }
+}
+@media(max-width: 991px){
+    .container{
+        max-width: 40.75em;
+        padding: 0 10px;
+    }
+}
+@media(max-width: 640px){
+    .container{
+        max-width: 510px;
+        padding: 0 5px;
+    }
+}
+@media(max-width: 540px){
+    .container{
+        max-width: 320px;
+        padding: 0 5px;
+    }
+}
